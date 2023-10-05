@@ -4,12 +4,23 @@ h1 {
 }
 hr {
     border: 5px solid black;
+    height: 10px;
+}
+.tiles {
+    border: 5px solid black;
+    height: 110px;
+    width: 110px;
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
 }
 #gameboard {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    gap: 16px; 
+    gap: 60px; 
     justify-content: center;
     align-items: center;
-   
+    border: none;
+    margin-top: 100px;
 }
+
