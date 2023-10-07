@@ -14,8 +14,10 @@ let player2Message= document.querySelector('.player2message')
 
 
 function winConditions() {
-    return
-}
+    boxes.forEach ((box) => {
+       
+    }
+)}
 
 boxes.forEach((box) => {
     box.addEventListener('click', () => {
