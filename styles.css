@@ -1,10 +1,16 @@
+body {
+    background-image: url('./images/download.jpg');
+    background-size: contain;
+}
 h1 {
     text-align: center;
     font-size: 60px;
 }
 hr {
+    width: 50%;
     border: 5px solid black;
     height: 10px;
+    background-color: black;
 }
 .tiles {
     border: 5px solid black;
@@ -30,5 +36,31 @@ h2 {
     text-align: center;
 }
 .player2message {
+    display: none;
+}
+button {
+    font-size: 70px;
+    display: none;
+    cursor: pointer;
+    margin: 50px;
+    background-color: black;
+    color: white;
+}
+#playagain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.player2winmessage, .player1winmessage{
+    display: none;
+}
+.draw {
     display: none;
 }
