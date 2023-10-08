@@ -29,6 +29,7 @@ function checkWin(player) {
 
 boxes.forEach((box) => {
     box.addEventListener('click', () => {
+        boxAudio.play()
         if (box.classList.contains('selected')) {
             return; // Exit the function if the box is already selected
         } else {
@@ -122,17 +123,21 @@ function resetGame() {
 
 
 const audio = new Audio('https://vgmsite.com/soundtracks/minecraft/kiwsgdpwbs/1-06.%20Moog%20City.mp3')
+const boxAudio = new Audio('/zapsplat_technology_games_console_nintendo_gameboy_advanced_cartridge_remove_12835.mp3')
 
-let volume = document.getElementById('volume-slider');
+let music = document.getElementById('play');
 audio.loop = true
 
 playAgain.addEventListener('click', () => {
     resetGame()
     playAgain.style.display = 'none'
+    boxAudio.play()
 })
 
-volume.addEventListener("change", function(e) {
-    audio.volume = e.currentTarget.value / 100;
+music.addEventListener('click', () => {
     audio.play()
+    music.style.display = 'none'
+    boxAudio.play()
+
    
 })
