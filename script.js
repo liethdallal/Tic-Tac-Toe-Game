@@ -122,7 +122,7 @@ function resetGame() {
 
 
 const audio = new Audio('https://vgmsite.com/soundtracks/minecraft/kiwsgdpwbs/1-06.%20Moog%20City.mp3')
-const boxAudio = new Audio('/zapsplat_technology_games_console_nintendo_gameboy_advanced_cartridge_remove_12835.mp3')
+const boxAudio = new Audio('./box.mp3')
 
 let music = document.getElementById('play');
 audio.loop = true
