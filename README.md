@@ -4,7 +4,7 @@ This is a simple implementation of the classic Tic Tac Toe game using HTML, CSS,
 
 ## How to Play
 
-1. Open the `index.html` file in a web browser.
+1. Open the link in the project description.
 2. The game will start, and Player 1 (X) will go first.
 3. Click on an empty square on the grid to place your symbol ('X' or 'O').
 4. The game will alternate between Player 1 and Player 2 until one of them wins or the game ends in a draw.
@@ -20,34 +20,9 @@ This is a simple implementation of the classic Tic Tac Toe game using HTML, CSS,
 - Simple and intuitive gameplay.
 
 
-## Wire Frames
+
 
 
 ## Picture of Completed Game
 
-
-## Planning 
-
-
-## Installation instructions & Technologies Used 
-
-
-
-## Major Hurdles & Unsolved Problems 
-Major Hurdles: 
-
-
-Unsolved Problems: 
-
-
-
-## User Stories
-
-
-
-### MVP Goals
-Goals: 
-
-
-
-### Stretch Goals
+![Picture of game](./images/pic%20of%20game.png)

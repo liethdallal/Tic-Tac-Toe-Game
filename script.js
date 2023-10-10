@@ -29,7 +29,6 @@ function checkWin(player) {
 
 boxes.forEach((box) => {
     box.addEventListener('click', () => {
-        boxAudio.play()
         if (box.classList.contains('selected')) {
             return; // Exit the function if the box is already selected
         } else {
@@ -131,13 +130,18 @@ audio.loop = true
 playAgain.addEventListener('click', () => {
     resetGame()
     playAgain.style.display = 'none'
-    boxAudio.play()
 })
 
 music.addEventListener('click', () => {
     audio.play()
     music.style.display = 'none'
-    boxAudio.play()
-
    
+})
+
+boxes.forEach((box) => {
+    box.addEventListener('click', () => {
+        if (player1.playerTurn || player2.playerTurn){
+            boxAudio.play()
+        }
+    })
 })

@@ -1,7 +1,6 @@
 body {
-    background-image: url('./images/download-1.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
+    background-image: url('./images/download.jpg');
+
 }
 h1 {
     text-align: center;
@@ -38,7 +37,7 @@ hr {
     justify-content: center;
     align-items: center;
     border: none;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 strong { 
     font-size: 50px;
@@ -57,7 +56,7 @@ button {
     font-size: 70px;
     display: none;
     cursor: pointer;
-    margin: 50px;
+    margin: 10px;
     background-color: black;
     color: white;
 }
@@ -71,7 +70,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    
 }
 .player2winmessage, .player1winmessage{
     display: none;
@@ -89,6 +88,103 @@ button {
     background-color: dimgray;
     width: 400px;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 30px;
    
+}
+
+@media all and (max-width: 1000px) {
+    body {
+        background-image: url('./images/download.jpg');
+    
+    }
+    h1 {
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        color: greenyellow;
+        background-color: black;
+        border: 10px solid black;
+        width: 200px;
+        margin: 0 auto;
+    }
+    h2 {
+        color: white;
+    }
+    hr {
+        width: 75%;
+        border: 5px solid black;
+        height: 10px;
+        background-color: white;
+    }
+    .tiles {
+        border: 5px solid black;
+        background-color: white;
+        height: 50px;
+        width: 70px;
+        font-size: 40px;
+        text-align: center;
+        cursor: pointer;
+    }
+    #gameboard {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 30px; 
+        justify-content: center;
+        align-items: center;
+        border: none;
+        margin-top: 30px;
+    }
+    strong { 
+        font-size: 40px;
+    }
+    h2 {
+        text-align: center;
+    }
+    .player1message {
+        text-align: center;
+
+    }
+    .player2message {
+        display: none;
+        text-align: center;
+    }
+    button {
+        font-size: 40px;
+        display: none;
+        cursor: pointer;
+        margin: 10px;
+        background-color: black;
+        color: white;
+    }
+    #playagain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    #slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .player2winmessage, .player1winmessage{
+        display: none;
+        text-align: center;
+    }
+    .draw {
+        display: none;
+        text-align: center;
+    }
+    #play { 
+        display: block;
+    }
+    #messages{
+        border: 2px solid black;
+        background-color: dimgray;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 50px;
+       
+    }
 }
