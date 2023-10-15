@@ -121,12 +121,10 @@ function resetGame() {
 }
 
 
-const audio = new Audio('https://vgmsite.com/soundtracks/new-super-mario-bros.-wii/kgdbscsmvi/43.%20Bonus.mp3')
-const boxAudio = new Audio('./box.mp3')
-const winAudio = new Audio('https://vgmsite.com/soundtracks/new-super-mario-bros.-wii/ijozbjcwap/39.%20Star%20Coin%20Collected.mp3')
+
 
 let music = document.getElementById('play');
-audio.loop = true
+
 
 playAgain.addEventListener('click', () => {
     resetGame()
@@ -134,7 +132,6 @@ playAgain.addEventListener('click', () => {
 })
 
 music.addEventListener('click', () => {
-    audio.play()
     music.style.display = 'none'
    
 })
@@ -142,10 +139,8 @@ music.addEventListener('click', () => {
 boxes.forEach((box) => {
     box.addEventListener('click', () => {
         if (player1.playerTurn || player2.playerTurn){
-            boxAudio.play()
         }
         if (checkWin("X") || checkWin("O")) {
-        winAudio.play()
         }
     })
 })
