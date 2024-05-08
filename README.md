@@ -3,7 +3,7 @@
 This is a simple implementation of the classic Tic Tac Toe game using HTML, CSS, and JavaScript. It allows two players to take turns and play the game on a 3x3 grid. The first player to get three of their symbols ('X' or 'O') in a row, column, or diagonal wins the game.
 
 ## How to Play
-
+ 
 1. Open the link in the project description.
 2. The game will start, and Player 1 (X) will go first.
 3. Click on an empty square on the grid to place your symbol ('X' or 'O').
